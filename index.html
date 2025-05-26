@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Venice David</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <style>
+    @font-face {
+      font-family: 'Flawsome';
+      src: url('fonts/Flawsome Regular.ttf') format('truetype');
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f6f1eb;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar-nav .nav-link {
+      font-family: 'Flawsome';
+      font-size: 25px;
+      color: #cb7477;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #c65c69;
+    }
+
+    .search-form input {
+      padding: 5px 10px;
+      border: 1px solid #cb7477;
+      border-radius: 5px;
+      font-family: Helvetica;
+      font-size: 17px;
+    }
+
+    .search-form button {
+      background-color: #cb7477;
+      border: none;
+      margin-left: 5px;
+      border-radius: 5px;
+      padding: 5px 8px;
+      cursor: pointer;
+    }
+
+    .search-form img {
+      width: 18px;
+      height: 18px;
+    }
+
+    .left-panel {
+      background-color: #cb7477;
+      color: white;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .left-panel .content {
+      text-align: left;
+      max-width: 420px;
+    }
+
+    .intro {
+      font-size: 15px;
+      margin-bottom: 4px;
+      font-family: Helvetica;
+    }
+
+    .name {
+      font-size: 70px;
+      font-weight: 800;
+      margin-bottom: 5px;
+      font-family: 'Flawsome';
+    }
+
+    .hello {
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .description {
+      font-size: 13px;
+      font-family: Helvetica;
+      text-transform: uppercase;
+    }
+
+    .profile-img {
+      width: 100%;
+    }
+
+    .banner {
+      text-align: center;
+      padding: 30px 0;
+      background-color: #f6f1eb;
+      color: #cb7477;
+      font-style: italic;
+      font-family: 'Flawsome', sans-serif;
+    }
+
+    .banner h2 {
+      font-size: 60px;
+    }
+
+    .section3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 0;
+    }
+
+    .section3 table {
+      border-collapse: collapse;
+    }
+
+    .section3 td {
+      padding: 20px;
+      vertical-align: top;
+    }
+
+    .section3 img {
+      width: 40vw;
+    }
+
+    .section3 .hello {
+      font-size: 2.5vw;
+      font-family: 'Flawsome';
+    }
+
+    .section3 .desc {
+      font-size: 15px;
+      font-weight: lighter;
+      margin: 10px 0;
+    }
+
+    .section3 .info {
+      border: 2px solid #cb7477;
+      padding: 30px;
+      margin-right: 50px;
+      color: #cb7477;
+    }
+
+    .projects {
+      padding: 40px 0;
+    }
+
+    .projects h1 {
+      text-align: center;
+      font-family: 'Flawsome';
+      font-style: italic;
+      color: #cb7477;
+      font-size: 60px;
+    }
+
+    .projectall {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .projectall a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      text-align: center;
+    }
+
+    .allquarters {
+      max-width: 500px;
+      margin-bottom: 40px;
+    }
+
+    .projimg {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border: 2px solid #a50045;
+      border-radius: 15px;
+    }
+
+    .allquarters h3 {
+      margin-top: 15px;
+      color: #cb7477;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 35px;
+      font-family: 'Flawsome';
+    }
+
+    .allquarters p {
+      margin-bottom: 2px;
+      color: #b5696c;
+      font-size: 27px;
+      font-family: 'Flawsome';
+    }
+    .projects img:hover {
+      transform: scale(1.05);
+    }
+
+    .sectionsource img {
+      width: 100%;
+    }
+
+  
+
+  footer {
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  color: #cb7477;
+  padding: 20px 0;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: #cb7477;
+  }
+
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand d-lg-none" style="font-family: 'Flawsome'; color: #cb7477;">Menu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-wrap">
+          <li class="nav-item"><a class="nav-link" href="ictproj.html" target="_blank">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="index1Q.html" target="_blank">Q1</a></li>
+          <li class="nav-item"><a class="nav-link" href="index2Q.html" target="_blank">Q2</a></li>
+          <li class="nav-item"><a class="nav-link" href="index3Q.html" target="_blank">Q3</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html" target="_blank">Q4</a></li>
+          <li class="nav-item"><a class="nav-link" href="whatsnext.html" target="_blank">WHAT'S NEXT?</a></li>
+          <li class="nav-item"><a class="nav-link" href="about4q.html" target="_blank">RATE US</a></li>
+        </ul>
+        <form class="d-flex search-form" role="search">
+          <input type="search" placeholder="Search..." aria-label="Search">
+          <button type="submit">
+            <img src="whiteee.png" alt="Search">
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid px-0">
+    <div class="row g-0">
+      <div class="col-md-6 left-panel">
+        <div class="content">
+          <p class="intro">HELLO, I AM</p>
+          <h1 class="name">Venice David</h1>
+          <p class="description">
+            This portfolio shows my project for each <br>
+            quarter for the school year 2024-2025.<br>
+            It covers the various programming languages.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="veniceee.jpg" alt="Venice David" class="profile-img">
+      </div>
+    </div>
+  </div>
+
+  <div class="banner">
+    <h2>Portfolio</h2>
+  </div>
+
+  <div class="section3">
+    <table>
+      <tr>
+        <td><img src="Venice.png"></td>
+        <td class="text">
+          <div class="info">
+            <p class="hello">VENICE BALUYUT DAVID</p>
+            <p class="desc">
+              Hi! I’m Venice B. David, a 15-year-old student from 9-Emerald. I’m someone who finds beauty in storytelling, whether it’s through film, literature, or the dreams I apire. My favorite movie is Call Me by Your Name by Luca Guadagnino — a film that reminds me how powerful emotion and yearning can be. I’m also deeply moved by the book, White Nights by Fyodor Dostoevsky, a story that captures loneliness, longing, and the art of connection. My ideal type? Someone like Cha Hyun Wook — charming, chinito, and effortlessly cool. But more than anything, my ambition is to become the greatest version of myself, someone who makes an impact in the world through passion and purpose.
+            </p>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="projects">
+    <h1>Projects</h1>
+
+    <div class="projectall">
+      <a href="index1Q.html" target="_blank" class="allquarters">
+        <img src="whimsy.png" class="projimg">
+        <h3>First Quarter</h3>
+        <p>Online Shop</p>
+      </a>
+
+      <a href="index2Q.html" target="_blank" class="allquarters">
+        <img src="fettecineclub.png" class="projimg">
+        <h3>Second Quarter</h3>
+        <p>Recipe Sharing Website</p>
+      </a>
+
+      <a href="index3Q.html" target="_blank" class="allquarters">
+        <img src="VenLexaCentrale.png" class="projimg">
+        <h3>Third Quarter</h3>
+        <p>Train Fare Guide</p>
+      </a>
+
+      <a href="ictproj.html" target="_blank" class="allquarters">
+        <img src="PortfolioVenice.png" class="projimg">
+        <h3>Fourth Quarter</h3>
+        <p>Online Portfolio</p>
+      </a>
+    </div>
+  </div>
+
+ <div class="sectionsource"> 
+  <div class="sources">
+      <img src="footerpart.png" class="sources">
+  </div>
+</div>
+
+
+<footer class="footer-section">
+  <p>&copy; 2025 Venice B. David. All rights reserved.</p>
+  <p>
+    <a href="https://docs.google.com/document/d/1wLzBIKeNysn6aMIbfa1aI0P-X6mDWzTzqJrhi4clcuA/edit?usp=sharing" target="_blank" class="source-link">
+      SOURCES
+    </a>
+  </p>
+</footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
