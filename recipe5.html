@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe 1</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+   <style>
+        body {
+            margin: 0;
+            font-family: futura;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0% 4%;
+            background-color: #E3DED1;
+            height: 9vw;
+        }
+
+        .navbar .logo img {
+            width: 12vw;
+        }
+
+        .navbar .logo img:hover {
+            content: url('logo2.png');
+        }
+
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin: 0 1.4vw;
+        }
+
+        .navbar ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 1.2vw;
+            padding-bottom: 0.8vw;
+        }
+
+        .navbar ul li a:hover {
+            color: #A18D74;
+        }
+
+        .navbar ul li a.active {
+            position: relative;
+        }
+
+        .navbar ul li a.active::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 0.25vw;
+            background-color: #A18D74;
+        }
+
+        .section1 {
+            margin: 1vw 0 0 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 65vw;
+        }
+
+        .recipe {
+            display: flex;
+            width: 80%;
+        }
+
+        .left {
+            flex: 35%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .right {
+            flex: 65%;
+            padding: 1vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .right .title {
+            font-size: 2.5vw;
+            margin: 0 0 0 1.2vw;
+        }
+
+        .right p {
+            margin-left: 1.2vw;
+            font-size: 1vw;
+        }
+
+        ul {
+            list-style-type: disc;
+        }
+
+        .ingredients {
+            border: 0.15vw solid black;
+            margin-left: 1.2vw;
+            height: 26vw;
+            font-size: 1vw;
+        }
+
+        .instructions {
+            width: 76%;
+            margin-top: 1.5vw;
+            padding: 0.9vw;
+            border: 0.15vw solid black;
+            font-size: 1vw;
+            height: 28vw;
+        }
+
+
+        .section5 {
+            height: 1.5vw;
+            background-color: #5F5A4D;
+            color: white;
+            text-align: center;
+            padding: 2vw 0;
+            font-size: 1vw;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index2Q.html"><img src="logo1.png"></a>
+        </div>
+        <ul>
+            <li><a href="index2Q.html">HOME</a></li>
+            <li><a href="menu.html" class="active">MENU</a></li>
+            <li><a href="about2Q.html">ABOUT</a></li>
+            <li><a href="contact2Q.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="section1">
+        <div class="recipe">
+            <div class="left">
+                <img src="4.png">
+            </div>
+            <div class="right">
+                <p class="title">Ravioli di Ricotta e Spinaci</p>
+                <p> 
+                Ravioli di Ricotta e Spinaci is a beloved Italian pasta dish, known for its delicate balance of flavors and textures. Originating in the northern regions of Italy, particularly in areas like Emilia-Romagna and Tuscany, this dish has become a classic staple throughout the country and around the world. The name "ravioli" refers to the square or round pasta pockets that are traditionally stuffed with a variety of fillings, and in this particular variety, the filling consists of two key ingredients: creamy ricotta cheese and fresh spinach.
+                </p>
+                <div class="ingredients">
+                    <p>INGREDIENTS</p>
+                    <ul>
+                        <li>2 cups all-purpose flour
+
+                        </li>
+2 large eggs
+
+</li>
+                        <li>1/4 tsp salt
+
+
+                     
+</li>
+                        <li>1-2 tbsp water (if needed)
+
+
+</li>
+                        <li>200g (7 oz) fresh spinach, chopped
+
+
+</li>
+
+             <li>1 tbsp olive oil
+
+
+
+                     
+</li>
+                        <li>200g (7 oz) ricotta cheese
+
+
+
+</li>
+ <li>Nutmeg
+
+
+
+</li>
+                        <li>1/4 cup grated Parmesan cheese
+
+
+
+</li>
+
+            <li>1 egg yolk
+
+
+                        </li>
+Salt and pepper to taste
+
+
+</li>
+                        <li>4 tbsp unsalted butter
+
+
+
+                     
+</li>
+                        <li>6-8 fresh sage leaves or 1 cup marinara sauce
+
+</li>
+
+
+                 </ul>
+                </div>
+            </div>
+          </div>
+          <div class="instructions">
+                <p>INSTRUCTIONS</p>
+                    <p>STEP 1: Mix flour and salt in a bowl. Create a well in the center, add eggs, and mix until a dough forms. Knead on a floured surface for 8–10 minutes until smooth. Wrap and let rest for 30 minutes.
+
+</p>
+                    <p>STEP 2: Sauté spinach in olive oil until wilted. Let it cool, then chop finely. Mix spinach, ricotta, Parmesan, egg yolk, salt, pepper, and nutmeg in a bowl until combined.
+
+
+</p>
+
+                    <p>STEP 3: Roll out the dough into thin sheets (about 1mm thick). Use a pasta machine if available.
+
+</p>      
+
+                 <p> STEP 4: Place small mounds of filling (about 1 tsp each) spaced evenly on one sheet of pasta.
+Brush the edges and spaces between mounds with water, then lay another sheet on top. Press around the filling to seal and cut into individual ravioli with a cutter or knife.
+</p>
+
+                    <p>STEP 5: Boil a large pot of salted water and cook ravioli for 3–4 minutes or until they float.
+
+
+</p>
+
+                    <p>STEP 6: Melt butter in a pan, add sage leaves, and cook until fragrant, or heat marinara sauce until warm.
+
+</p>      
+
+                 <p> STEP 7: Toss ravioli gently in the butter-sage sauce or spoon marinara over them. Garnish with Parmesan if desired.
+
+</p>
+
+          </div>
+    </div>
+
+    <div class="section5">
+        &copy; 2025 FETTUCINE CLUB. VENICE DAVID.
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
