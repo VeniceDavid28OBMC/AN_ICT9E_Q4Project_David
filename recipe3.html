@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe 1</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+   <style>
+        body {
+            margin: 0;
+            font-family: futura;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0% 4%;
+            background-color: #E3DED1;
+            height: 9vw;
+        }
+
+        .navbar .logo img {
+            width: 12vw;
+        }
+
+        .navbar .logo img:hover {
+            content: url('logo2.png');
+        }
+
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin: 0 1.4vw;
+        }
+
+        .navbar ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 1.2vw;
+            padding-bottom: 0.8vw;
+        }
+
+        .navbar ul li a:hover {
+            color: #A18D74;
+        }
+
+        .navbar ul li a.active {
+            position: relative;
+        }
+
+        .navbar ul li a.active::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 0.25vw;
+            background-color: #A18D74;
+        }
+
+        .section1 {
+            margin: 1vw 0 0 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 65vw;
+        }
+
+        .recipe {
+            display: flex;
+            width: 80%;
+        }
+
+        .left {
+            flex: 35%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .right {
+            flex: 65%;
+            padding: 1vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .right .title {
+            font-size: 2.5vw;
+            margin: 0 0 0 1.2vw;
+        }
+
+        .right p {
+            margin-left: 1.2vw;
+            font-size: 1vw;
+        }
+
+        ul {
+            list-style-type: disc;
+        }
+
+        .ingredients {
+            border: 0.15vw solid black;
+            margin-left: 1.2vw;
+            height: 24vw;
+            font-size: 1vw;
+        }
+
+        .instructions {
+            width: 76%;
+            margin-top: 1.5vw;
+            padding: 0.9vw;
+            border: 0.15vw solid black;
+            font-size: 1vw;
+        }
+
+
+        .section5 {
+            height: 1.5vw;
+            background-color: #5F5A4D;
+            color: white;
+            text-align: center;
+            padding: 2vw 0;
+            font-size: 1vw;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index2Q.html"><img src="logo1.png"></a>
+        </div>
+        <ul>
+            <li><a href="index2Q.html">HOME</a></li>
+            <li><a href="menu.html" class="active">MENU</a></li>
+            <li><a href="about2Q.html">ABOUT</a></li>
+            <li><a href="contact2Q.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="section1">
+        <div class="recipe">
+            <div class="left">
+                <img src="3.png">
+            </div>
+            <div class="right">
+                <p class="title">Whipped Feta with Herbs</p>
+                <p>
+                    A tasty Italian snack made with toasted bread topped with fresh tomatoes, basil, olive oil, and garlic. It's simple, fresh, and full of flavor!
+                </p>
+                <br>
+                <div class="ingredients">
+                    <p>INGREDIENTS</p>
+                    <ul>
+                        <li>200g (7 oz) feta cheese, crumbled
+                        </li>
+                        <li>1/4 cup cream cheese (softened)
+</li>
+                        <li>2 tbsp olive oil (plus extra for drizzling)
+</li>
+                        <li>1 clove garlic, minced
+</li>
+                        <li>2 tbsp fresh parsley, chopped
+</li>
+                        <li>1 tbsp fresh dill, chopped
+</li>
+                        <li>1 tbsp fresh chives, chopped
+</li>
+                        <li>Salt and pepper to taste
+</li>
+                        <li>Optional: Zest of 1 lemon
+</li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+          <div class="instructions">
+                <p>INSTRUCTIONS</p>
+                    <p>STEP 1: In a food processor, combine feta cheese and cream cheese. Blend until smooth and creamy.</p>
+                    <p>STEP 2: Add olive oil, garlic, parsley, dill, and chives. Blend again until herbs are evenly incorporated. </p>
+                    <p>STEP 3: Taste and season with salt, pepper, and lemon zest if desired.</p>
+                    <p>STEP 4: Transfer to a serving bowl, drizzle with olive oil, and garnish with extra herbs. Serve immediately with bread, crackers, or veggies, or refrigerate until ready to serve.</p>
+          </div>
+    </div>
+
+    <div class="section5">
+        &copy; 2025 FETTUCINE CLUB. VENICE DAVID.
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

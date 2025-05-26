@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe 1</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+   <style>
+        body {
+            margin: 0;
+            font-family: futura;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0% 4%;
+            background-color: #E3DED1;
+            height: 9vw;
+        }
+
+        .navbar .logo img {
+            width: 12vw;
+        }
+
+        .navbar .logo img:hover {
+            content: url('logo2.png');
+        }
+
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin: 0 1.4vw;
+        }
+
+        .navbar ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 1.2vw;
+            padding-bottom: 0.8vw;
+        }
+
+        .navbar ul li a:hover {
+            color: #A18D74;
+        }
+
+        .navbar ul li a.active {
+            position: relative;
+        }
+
+        .navbar ul li a.active::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 0.25vw;
+            background-color: #A18D74;
+        }
+
+        .section1 {
+            margin: 1vw 0 0 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 65vw;
+        }
+
+        .recipe {
+            display: flex;
+            width: 80%;
+        }
+
+        .left {
+            flex: 35%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .right {
+            flex: 65%;
+            padding: 1vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .right .title {
+            font-size: 2.5vw;
+            margin: 0 0 0 1.2vw;
+        }
+
+        .right p {
+            margin-left: 1.2vw;
+            font-size: 1vw;
+        }
+
+        ul {
+            list-style-type: disc;
+        }
+
+        .ingredients {
+            border: 0.15vw solid black;
+            margin-left: 1.2vw;
+            height: 26vw;
+            font-size: 1vw;
+        }
+
+        .instructions {
+            width: 76%;
+            margin-top: 1.5vw;
+            padding: 0.9vw;
+            border: 0.15vw solid black;
+            font-size: 1vw;
+            height: 31vw;
+        }
+
+
+        .section5 {
+            height: 1.5vw;
+            background-color: #5F5A4D;
+            color: white;
+            text-align: center;
+            padding: 2vw 0;
+            font-size: 1vw;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index2Q.html"><img src="logo1.png"></a>
+        </div>
+        <ul>
+            <li><a href="index2Q.html">HOME</a></li>
+            <li><a href="menu.html" class="active">MENU</a></li>
+            <li><a href="about2Q.html">ABOUT</a></li>
+            <li><a href="contact2Q.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="section1">
+        <div class="recipe">
+            <div class="left">
+                <img src="6.png">
+            </div>
+            <div class="right">
+                <p class="title">Coq au Vin</p>
+                <p> 
+                    Coq au Vin translates directly to "rooster in wine," but in modern times, chicken (typically a whole bird, cut into pieces) is commonly used instead of rooster, due to the latter’s toughness. The dish involves braising chicken in a rich, aromatic red wine sauce, traditionally Burgundy wine, alongside hearty vegetables, herbs, and a medley of flavorsome accompaniments like mushrooms, onions, and bacon.
+
+
+                </p>
+                <div class="ingredients">
+                    <p>INGREDIENTS</p>
+                    <ul>
+                        <li>1 whole chicken (about 3–4 lbs), cut into pieces or 4–6 chicken thighs/legs
+
+
+                        </li> <li>
+1 bottle dry red wine (e.g., Burgundy or Pinot Noir)
+
+
+</li>
+                        <li>2 tbsp olive oil
+
+
+
+                     
+</li>
+                        <li>100g (3.5 oz) bacon or pancetta, diced
+
+
+
+</li>
+                        <li>2 tbsp all-purpose flour
+
+
+
+</li>
+
+             <li>2 cups chicken stock
+
+
+
+
+                     
+</li>
+                        <li>1/2 cup brandy (optional)
+
+
+
+
+</li>
+ <li>2 cloves garlic, minced
+
+
+
+
+</li>
+                        <li>2-3 sprigs fresh thyme
+
+
+
+</li>
+
+            <li>1 bay leaf
+
+
+
+                        </li>
+200g (7 oz) button mushrooms, sliced
+
+
+
+</li>
+                        <li>12 pearl onions (peeled, or use small shallots)
+
+
+
+
+                     
+</li>
+                        <li>Salt and pepper to taste
+
+</li>
+<li>2 tbsp fresh parsley, chopped
+
+
+</li>
+
+
+                 </ul>
+                </div>
+            </div>
+          </div>
+          <div class="instructions">
+                <p>INSTRUCTIONS</p>
+                    <p>STEP 1: Place chicken pieces in a bowl with wine, thyme, bay leaf, and garlic. Cover and refrigerate for 4–8 hours.
+
+</p>
+                    <p>STEP 2: Remove chicken from marinade (reserve marinade) and pat dry. Strain the marinade and set aside.
+
+
+
+</p>
+
+                    <p>STEP 3: Heat olive oil in a large Dutch oven or heavy pot. Cook bacon until crispy, then remove and set aside. Brown chicken pieces on both sides in the same pot, seasoning with salt and pepper. Remove and set aside.
+
+
+</p>      
+
+                 <p> STEP 4: In the same pot, sauté mushrooms and pearl onions until golden. Remove and set aside.
+</p>
+
+                    <p>STEP 5: Add flour to the pot and cook for 1 minute, stirring constantly.
+Slowly add reserved marinade, chicken stock, and brandy (if using), scraping the bottom of the pot. Return chicken and bacon to the pot, add thyme and bay leaf, and bring to a simmer.
+
+
+</p>
+
+                    <p>STEP 6: Cover and cook on low heat for 1–1.5 hours, or until chicken is tender. Stir in sautéed mushrooms and onions. Simmer for 10 more minutes.
+
+
+
+</p>      
+
+                 <p> STEP 7: Garnish with fresh parsley and serve hot with crusty bread, mashed potatoes, or buttered noodles.
+
+
+</p>
+
+          </div>
+    </div>
+
+    <div class="section5">
+        &copy; 2025 FETTUCINE CLUB. VENICE DAVID.
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

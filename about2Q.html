@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FETTUCINE Club</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+   <style>
+        body {
+            margin: 0;
+            font-family: futura;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0% 4%;
+            background-color: #E3DED1;
+            height: 9vw;
+        }
+
+        .navbar .logo img {
+            width: 12vw;
+        }
+
+        .navbar .logo img:hover {
+            content: url('logo2.png');
+        }
+
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin: 0 1.4vw;
+        }
+
+        .navbar ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 1.2vw;
+            padding-bottom: 0.8vw;
+        }
+
+        .navbar ul li a:hover {
+            color: #A18D74;
+        }
+
+        .navbar ul li a.active {
+            position: relative;
+        }
+
+        .navbar ul li a.active::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 0.25vw;
+            background-color: #A18D74;
+        }
+
+        .top {
+            background-color: #C1B59F;
+            text-align: center;
+            padding: 6vw 0;
+        }
+
+        .top img {
+            height: 25vw;
+            padding: 0;
+        }
+
+        .top p {
+            margin: 1vw 10vw;
+            font-size: 1.5vw;
+        }
+
+        .section3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 38vw;
+        }
+
+        .section3 table {
+            border-collapse: collapse;
+        }
+
+        .section3 table td {
+            width: 40vw;
+            height: 20vw;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .section3 table td img {
+            width: 25vw;
+        }
+
+        .section3 .hello {
+            font-size: 2.5vw;
+            margin: 2vw 0;
+        }
+
+        .section3 .desc {
+            font-size: 1vw;
+            font-weight: lighter;
+            margin: 0 4.5vw;
+        }
+
+        .section3 .text {
+            border: 0.15vw solid black;
+        }
+
+        .bottom {
+            height: 50vw;
+            background-image: url('4.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        .section5 {
+            height: 1.5vw;
+            background-color: #5F5A4D;
+            color: white;
+            text-align: center;
+            padding: 2vw 0;
+            font-size: 1vw;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index2Q.html"><img src="logo1.png"></a>
+        </div>
+        <ul>
+            <li><a href="index2Q.html">HOME</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="about2Q.html" class="active">ABOUT</a></li>
+            <li><a href="contact2Q.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="top">
+        <img src="logo1.png">
+        <p>
+            Welcome to Fettucine Club, where every dish tells a story, and every recipe is a celebration of European heritage. From the golden sun of the Mediterranean to the misty charm of northern Europe, our site brings together the best of Europe's diverse and mouthwatering flavors. Whether you're a seasoned home chef or just starting your culinary adventure, Fettucine Club offers an array of traditional and innovative European recipes.
+        </p>
+        <br>
+        <p>
+           Indulge in the rich, comforting pasta dishes of Italy, savor the delicate pastries of France, explore the hearty stews of Germany, or discover the vibrant vegetables and seafood of Spain. With a collection curated for food lovers, Fettucine Club is more than just a cookbook—it's a passport to the finest kitchens across Europe.
+        </p>
+    </div>
+
+    <div class="section3" id="aboutme">
+        <table>
+            <tr>
+                <td>
+                    <img src="VeniceDavid.jpg">
+                </td>
+                <td class="text">
+                    <p class="hello">VENICE DAVID</p>
+                    <p class="desc">
+                        Venice David, the visionary behind Fettucine Club, is a passionate culinary enthusiast with a deep love for European cuisine. A self-taught cook with a knack for blending tradition and innovation, Venice believes that food is not just nourishment but an experience that connects people, cultures, and histories. Inspired by travels across Europe and a lifelong fascination with its diverse food cultures, Venice has dedicated years to learning, perfecting, and sharing the art of cooking through this site.
+                    </p>
+                    <br>
+                    <p class="desc">
+                       Our step-by-step recipes, ingredient tips, and beautiful photos will guide you to recreate the magic of European dining right in your own kitchen. Join the club and start cooking your way through a continent brimming with flavor. Welcome to Fettucine Club—where food, culture, and passion meet.                        
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="bottom"></div>
+
+    </div>
+
+    <div class="section5">
+        &copy; 2025 FETTUCINE CLUB. VENICE DAVID.
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
